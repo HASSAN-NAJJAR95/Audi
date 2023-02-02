@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--style-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ِAudi A8</title>
+</head>
+<body>
+          <!--Navbar-->
+            <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img class="img-fluid logo" src="./images/Audi Logo.png" alt=""></a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="index.html#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="sign.html">Sign In</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html#contact">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+          <!--Hero-->
+            <section class="car-video">
+                <div class="video-overlay">
+                    <i  class="fa fa-play-circle video-control-play"></i>
+                    <i  class="fa fa-pause-circle video-control-pause"></i>
+                </div>
+                <div class="video-container">
+                    <video class="car">
+                        <source src="./images/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+          <!--Latest Version-->
+            <h2 class="text-center my-3">Latest products</h2>
+            <div class="position-relative">
+                <img class="img-fluid w-100" src="./images/a8.png" alt="">
+                <div class="position-absolute about-absolute text-light">
+                    <h5 class="card-title">THE ALL-NEW 2019 AUDI A8</h5>
+                  <h3>Luxury found the
+                    vehicle it deserves.</h3>
+                    <h5>Starting at $83,800</h5>
+                  <p class="card-text">The dramatic stretch of the top light bar helps emphasize the width of the Audi A8. Using advanced OLED lighting technology, the available OLED taillights with animation perform a choreographed dance of light when the vehicle is locked or unlocked.</p>
+                  <button class="btn btn-secondary"><a class="navbar-brand"  href="index.php#about" >Learn More</a></button>
+
+                </div>
+            </div>
+          <!--Products-->
+          <div id="products" class="container-fluid products my-3">
+            <ul class="nav nav-tabs my-4 w-tabs w-75 mx-auto " id="myTab" role="tablist">
+              <li class="nav-item text mx-auto" role="presentation">
+                <button class="nav-link text-dark active fs-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button text-dark" role="tab" aria-controls="home-tab-pane" aria-selected="true">2018</button>
+              </li>
+              <li class="nav-item mx-auto" role="presentation">
+                <button class="nav-link text-dark fs-5" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">2019</button>
+              </li>
+              <li class="nav-item mx-auto" role="presentation">
+                <button class="nav-link text-dark fs-5" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">2020</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                  <div class="row row-cols-1 row-cols-md-4 g-4">
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card text-center">
+                          <img src="./images/products/2018/A4.webp" alt="cars2018">
+                          <div class="card-body">
+                            <h5 class="card-title">Audi A4</h5>
+                            <p class="card-text">29.700$ </p>
+                            <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products2018">
+                                BUY NOW
+                            </button>
+                          </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="products2018" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container">
+                                          <!--But Order-->
+                                          <form action="index.php#products" method="post">
+                                            <!--First Name-->
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">First Name</span>
+                                                    <input type="text" name="firstName"  class="form-control" >
+                                                  </div>
+                                                  <!--Last Name-->
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Last Name</span>
+                                                  <input type="text" name="lastName" class="form-control" >
+                                                  </div>
+                                                  <!--Email-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Email</span>
+                                                    <input type="text" class="form-control" id="email" name="email"   >
+                                                  </div>
+                                                  <!--Car Type-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Car Name</span>
+                                                    <input type="text" class="form-control" id="carName" name="carName"  >
+                                                  </div>
+                                                  <!--credit card-->
+                                                  <div class="input-group mb-3">
+                                                      <span class="input-group-text">Card Name</span>
+                                                      <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Card Number</span>
+                                                      <input type="text" name="cardNumber" class="form-control w-25">
+                                                      <div class="my-3"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                      <span class="input-group-text">Code Number On Card</span>
+                                                      <input type="text" name="codeNumber"  class="form-control">
+                                                    </div>
+                                                    <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                          </form>
+                                      </div>
+                                    </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card text-center">
+                          <img src="./images/products/2018/A5.jpg" alt="cars2018">
+                          <div class="card-body">
+                            <h5 class="card-title">Audi A5</h5>
+                            <p class="card-text">45.000$ </p>
+                            <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products20182">
+                                BUY NOW
+                            </button>
+                          </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="products20182" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container">
+                                          <!--But Order-->
+                                          <form action="index.php#products" method="post">
+                                            <!--First Name-->
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">First Name</span>
+                                                    <input type="text" name="firstName"  class="form-control" >
+                                                  </div>
+                                                  <!--Last Name-->
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Last Name</span>
+                                                  <input type="text" name="lastName" class="form-control" >
+                                                  </div>
+                                                  <!--Email-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Email</span>
+                                                    <input type="text" class="form-control" id="email" name="email"   >
+                                                  </div>
+                                                  <!--Car Type-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Car Name</span>
+                                                    <input type="text" class="form-control" id="carName" name="carName"  >
+                                                  </div>
+                                                  <!--credit card-->
+                                                  <div class="input-group mb-3">
+                                                      <span class="input-group-text">Card Name</span>
+                                                      <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Card Number</span>
+                                                      <input type="text" name="cardNumber" class="form-control w-25">
+                                                      <div class="my-3"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                      <span class="input-group-text">Code Number On Card</span>
+                                                      <input type="text" name="codeNumber"  class="form-control">
+                                                    </div>
+                                                    <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                          </form>
+                                      </div>
+                                    </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card text-center">
+                          <img src="./images/products/2018/A6.jpg" alt="cars2018">
+                          <div class="card-body">
+                            <h5 class="card-title">Audi A6</h5>
+                            <p class="card-text">52,875$ </p>
+                            <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products20183">
+                                BUY NOW
+                            </button>
+                          </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="products20183" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container">
+                                          <!--But Order-->
+                                          <form action="index.php#products" method="post">
+                                            <!--First Name-->
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">First Name</span>
+                                                    <input type="text" name="firstName"  class="form-control" >
+                                                  </div>
+                                                  <!--Last Name-->
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Last Name</span>
+                                                  <input type="text" name="lastName" class="form-control" >
+                                                  </div>
+                                                  <!--Email-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Email</span>
+                                                    <input type="text" class="form-control" id="email" name="email"   >
+                                                  </div>
+                                                  <!--Car Type-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Car Name</span>
+                                                    <input type="text" class="form-control" id="carName" name="carName"  >
+                                                  </div>
+                                                  <!--credit card-->
+                                                  <div class="input-group mb-3">
+                                                      <span class="input-group-text">Card Name</span>
+                                                      <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Card Number</span>
+                                                      <input type="text" name="cardNumber" class="form-control w-25">
+                                                      <div class="my-3"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                      <span class="input-group-text">Code Number On Card</span>
+                                                      <input type="text" name="codeNumber"  class="form-control">
+                                                    </div>
+                                                    <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                          </form>
+                                      </div>
+                                    </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card text-center">
+                          <img src="./images/products/2018/A7.jpg" alt="cars2018">
+                          <div class="card-body">
+                            <h5 class="card-title">Audi A7</h5>
+                            <p class="card-text">71.000$</p>
+                            <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products20184">
+                                BUY NOW
+                            </button>
+                          </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="products20184" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                  <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="container">
+                                          <!--But Order-->
+                                          <form action="index.php#products" method="post">
+                                            <!--First Name-->
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text">First Name</span>
+                                                    <input type="text" name="firstName"  class="form-control" >
+                                                  </div>
+                                                  <!--Last Name-->
+                                                  <div class="input-group mb-3">
+                                                  <span class="input-group-text">Last Name</span>
+                                                  <input type="text" name="lastName" class="form-control" >
+                                                  </div>
+                                                  <!--Email-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Email</span>
+                                                    <input type="text" class="form-control" id="email" name="email"   >
+                                                  </div>
+                                                  <!--Car Type-->
+                                                  <div class="input-group mb-3">
+                                                    <span class="input-group-text">Car Name</span>
+                                                    <input type="text" class="form-control" id="carName" name="carName"  >
+                                                  </div>
+                                                  <!--credit card-->
+                                                  <div class="input-group mb-3">
+                                                      <span class="input-group-text">Card Name</span>
+                                                      <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                    <span class="input-group-text">Card Number</span>
+                                                      <input type="text" name="cardNumber" class="form-control w-25">
+                                                      <div class="my-3"></div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                      <span class="input-group-text">Code Number On Card</span>
+                                                      <input type="text" name="codeNumber"  class="form-control">
+                                                    </div>
+                                                    <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                          </form>
+                                      </div>
+                                    </div>
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                      <img src="./images/products/2019/A4.jpg" alt="cars2019">
+                      <div class="card-body">
+                        <h5 class="card-title">Audi A4</h5>
+                        <p class="card-text">44.300$ </p>
+                        <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products2019">
+                            BUY NOW
+                        </button>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="products2019" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#products" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">First Name</span>
+                                                <input type="text" name="firstName"  class="form-control" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" class="form-control" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Car Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Car Name</span>
+                                                <input type="text" class="form-control" id="carName" name="carName"  >
+                                              </div>
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Card Name</span>
+                                                  <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Card Number</span>
+                                                  <input type="text" name="cardNumber" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber"  class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                      <img src="./images/products/2019/A6.jpg" alt="cars2019">
+                      <div class="card-body">
+                        <h5 class="card-title">Audi A6</h5>
+                        <p class="card-text">59,895$ </p>
+                        <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products20192">
+                            BUY NOW
+                        </button>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="products20192" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#products" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">First Name</span>
+                                                <input type="text" name="firstName"  class="form-control" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" class="form-control" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Car Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Car Name</span>
+                                                <input type="text" class="form-control" id="carName" name="carName"  >
+                                              </div>
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Card Name</span>
+                                                  <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Card Number</span>
+                                                  <input type="text" name="cardNumber" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber"  class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                      <img src="./images/products/2019/A7.jpg" alt="cars2019">
+                      <div class="card-body">
+                        <h5 class="card-title">Audi A7</h5>
+                        <p class="card-text">68.995$ </p>
+                        <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products20193">
+                            BUY NOW
+                        </button>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="products20193" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#products" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">First Name</span>
+                                                <input type="text" name="firstName"  class="form-control" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" class="form-control" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Car Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Car Name</span>
+                                                <input type="text" class="form-control" id="carName" name="carName"  >
+                                              </div>
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Card Name</span>
+                                                  <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Card Number</span>
+                                                  <input type="text" name="cardNumber" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber"  class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                      <img src="./images/products/2019/A8.jpg" alt="cars2019">
+                      <div class="card-body">
+                        <h5 class="card-title">Audi A8</h5>
+                        <p class="card-text">84.795$ </p>
+                        <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products20194">
+                            BUY NOW
+                        </button>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="products20194" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#products" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">First Name</span>
+                                                <input type="text" name="firstName"  class="form-control" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" class="form-control" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Car Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Car Name</span>
+                                                <input type="text" class="form-control" id="carName" name="carName"  >
+                                              </div>
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Card Name</span>
+                                                  <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Card Number</span>
+                                                  <input type="text" name="cardNumber" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber"  class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                      <img src="./images/products/2020/Q5.webp" alt="cars2020">
+                      <div class="card-body">
+                        <h5 class="card-title">Audi Q5</h5>
+                        <p class="card-text">44.300$ </p>
+                        <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products2020">
+                            BUY NOW
+                        </button>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="products2020" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#products" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">First Name</span>
+                                                <input type="text" name="firstName"  class="form-control" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" class="form-control" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Car Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Car Name</span>
+                                                <input type="text" class="form-control" id="carName" name="carName"  >
+                                              </div>
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Card Name</span>
+                                                  <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Card Number</span>
+                                                  <input type="text" name="cardNumber" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber"  class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                      <img src="./images/products/2020/Q7.webp" alt="cars2020">
+                      <div class="card-body">
+                        <h5 class="card-title">Audi Q7</h5>
+                        <p class="card-text">54.800$ </p>
+                        <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products20202">
+                            BUY NOW
+                        </button>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="products20202" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#products" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">First Name</span>
+                                                <input type="text" name="firstName"  class="form-control" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" class="form-control" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Car Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Car Name</span>
+                                                <input type="text" class="form-control" id="carName" name="carName"  >
+                                              </div>
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Card Name</span>
+                                                  <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Card Number</span>
+                                                  <input type="text" name="cardNumber" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber"  class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                      <img src="./images/products/2020/Rs7.jpg" alt="cars2020">
+                      <div class="card-body">
+                        <h5 class="card-title">Audi RS7</h5>
+                        <p class="card-text">257.290$ </p>
+                        <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products20203">
+                            BUY NOW
+                        </button>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="products20203" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#products" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">First Name</span>
+                                                <input type="text" name="firstName"  class="form-control" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" class="form-control" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Car Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Car Name</span>
+                                                <input type="text" class="form-control" id="carName" name="carName"  >
+                                              </div>
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Card Name</span>
+                                                  <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Card Number</span>
+                                                  <input type="text" name="cardNumber" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber"  class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card text-center">
+                      <img src="./images/products/2020/S4.jpg" alt="cars2020">
+                      <div class="card-body">
+                        <h5 class="card-title">Audi S4</h5>
+                        <p class="card-text">50.895$ </p>
+                        <button type="button" class="btn btn-outline-secondary mt-3 " data-bs-toggle="modal" data-bs-target="#products20204">
+                            BUY NOW
+                        </button>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade" id="products20204" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                              <h5 class="modal-title" id="staticBackdropLabel">Buy Menu</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="container">
+                                      <!--But Order-->
+                                      <form action="index.php#products" method="post">
+                                        <!--First Name-->
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">First Name</span>
+                                                <input type="text" name="firstName"  class="form-control" >
+                                              </div>
+                                              <!--Last Name-->
+                                              <div class="input-group mb-3">
+                                              <span class="input-group-text">Last Name</span>
+                                              <input type="text" name="lastName" class="form-control" >
+                                              </div>
+                                              <!--Email-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Email</span>
+                                                <input type="text" class="form-control" id="email" name="email"   >
+                                              </div>
+                                              <!--Car Type-->
+                                              <div class="input-group mb-3">
+                                                <span class="input-group-text">Car Name</span>
+                                                <input type="text" class="form-control" id="carName" name="carName"  >
+                                              </div>
+                                              <!--credit card-->
+                                              <div class="input-group mb-3">
+                                                  <span class="input-group-text">Card Name</span>
+                                                  <input type="text" name="cardName" class="form-control w-25" name="cardName">         
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                <span class="input-group-text">Card Number</span>
+                                                  <input type="text" name="cardNumber" class="form-control w-25">
+                                                  <div class="my-3"></div>
+                                                </div>
+                                                <div class="input-group">
+                                                  <span class="input-group-text">Code Number On Card</span>
+                                                  <input type="text" name="codeNumber"  class="form-control">
+                                                </div>
+                                                <input  type="submit" class="btn btn-outline-danger mt-3" value="Confirm Order" name="submit5">
+                                      </form>
+                                  </div>
+                                </div>
+                              <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+  
+              </div>
+            </div>
+          </div>
+          <!--About A8-->
+            <h2 id="about" class="text-center my-3">About Audi A8</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 container-fluid mx-auto">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="card">
+                  <img class="img-fluid" src="./images/contact.png" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                  <img src="./images/products/1.jpeg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                  <img src="./images/products/2.jpeg" class="card-img-top" alt="...">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card">
+                  <img src="./images/products/3.jpeg" class="card-img-top" alt="...">
+                </div>
+              </div>
+            </div>
+
+            <!--Contact Us-->
+            <h2 id="contact" class="text-center my-3">Contact Us</h2>
+            <div class="container-fluid contact position-relative">
+              <img class="img fluid w-100 " src="./images/products/contactus.jpg" alt="">
+                <div class=" position-absolute contact-absolute ">
+                  <form action="#" method="POST" >
+                    <!--First Name-->
+                    <div class="input-group mb-2 w-75 ">
+                      <span class="input-group-text" id="inputGroup-sizing-default">First Name</span>
+                      <input type="text" class="me-2 form-control" name="firstName1" id="firstName1" required>
+                    </div>
+                    <!--Last Name-->
+                    <div class="input-group mb-2 w-75  ">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Last Name</span>
+                      <input type="text" class="me-2 form-control" name="lastName1" id="lastName1"required>
+                    </div>
+                    <!--Email-->
+                    <div class="input-group mb-2  w-75 ">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+                      <input type="text" class=" form-control me-2" aria-label="Sizing example input" name="email1" id="email1" required>
+                    </div>
+                    <!--Text Area-->
+                      <div class="input-group mb-2 w-75">
+                        <span class="input-group-text">Message</span>
+                        <textarea class="form-control me-2" name="letter" id="letter" required></textarea>
+                      </div>
+                      <!--Check Box-->
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
+                        </div>
+                      </div>
+                    <div class="">
+                      <input class="btn btn-outline-light my-2 " name="" id=""  type="submit" value="Confirm">
+                      <input class="btn btn-outline-light my-2 " name="" id=""  type="submit" value="Refresh">
+                    </div>
+                  </form>
+                </div>
+            
+            </div>
+
+          <!--Footer-->
+            <div class="container-fluid text-center bg-light">
+              <p>All Copy Right Are Reserved &copy;</p>
+            </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.2.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
