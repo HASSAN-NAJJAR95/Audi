@@ -301,6 +301,8 @@
 /*Contact Us*/
 .contact img {
   height: 890px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact .contact-absolute {
