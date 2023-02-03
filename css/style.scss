@@ -8,7 +8,7 @@
     height: 50px;
 }
 .about-absolute{
-    width: 163px !important;
+    width: 250px !important;
     top:10%;
     right: 10%;
     @media screen{
@@ -18,7 +18,7 @@
             top:4%;
             right: 5%;
         }
-        @media (max-width:765px){
+        @media (max-width:845px){
             h5{
                 font-size:15px ;
             }
@@ -33,7 +33,7 @@
             top:18%;
             right: 1%;
         }
-        @media (max-width:614px){
+        @media (max-width:657px){
             width: 100%;
             h5{
                 font-size:12px ;
