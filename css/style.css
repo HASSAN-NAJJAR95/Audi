@@ -306,7 +306,7 @@
 }
 
 .contact .contact-absolute {
-  width: 351px !important;
+  width: 500px !important;
   height: 320;
   top: 5%;
   left: 4%;
@@ -314,7 +314,7 @@
 
 @media (max-width: 800px) {
   .contact .contact-absolute {
-    width: 400px;
+    width: 400px !important;
     height: 320;
     top: 5%;
     left: 10%;
