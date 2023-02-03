@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 1090px) {
   .about-absolute {
-    width: 300px;
+    width: 300px !important;
     font-size: 12px;
     top: 4%;
     right: 5%;
@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 845px) {
   .about-absolute {
-    width: 255px;
+    width: 255px !important;
     font-size: 9px;
     top: 18%;
     right: 1%;
@@ -43,22 +43,21 @@
   }
 }
 
-@media screen and (max-width: 657px) {
+@media screen and (max-width: 614px) {
   .about-absolute {
-    width: 100%;
-    width: 250px;
-    top: 18%;
+    width: 139px !important;
+    top: 15%;
     left: 57%;
   }
   .about-absolute h5 {
-    font-size: 12px;
+    font-size: 10px;
   }
   .about-absolute h3 {
     font-size: 10px;
   }
   .about-absolute button {
     font-size: 10px;
-    padding:3px
+    padding: 3px;
   }
   .about-absolute p {
     display: none;
