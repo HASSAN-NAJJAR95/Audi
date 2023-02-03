@@ -81,7 +81,6 @@
             @media (max-width:365px){
                 margin-bottom: 50% !important;
                 font-size: 1rem;
-               ;
             }   
         }
         .video-control-pause{
@@ -219,6 +218,7 @@
 .contact{
     img{
         height: 890px;
+        object-fit: cover;
     }
     .contact-absolute{
         width: 351px !important;
